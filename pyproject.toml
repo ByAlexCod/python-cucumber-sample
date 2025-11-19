@@ -1,0 +1,25 @@
+[project]
+name = "python-gherkin"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Alexandre Spitz", email = "a18.spitz@gmail.com"},
+]
+dependencies = ["behave>=1.3.3"]
+requires-python = ">=3.13"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+source-path = "src"
+
+[dependency-groups]
+dev = [
+    "behave>=1.3.3",
+]
